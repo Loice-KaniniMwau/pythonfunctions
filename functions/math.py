@@ -1,8 +1,8 @@
 def add(a,b):
     answer=a+b
     return answer
-def multiply(a,b):
-    product=a*b
+def multiply(a,b,c):
+    product=a*b*c
     return product
 def subtract(a,b):
     substraction=a-b
