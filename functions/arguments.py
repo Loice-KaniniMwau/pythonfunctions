@@ -1,10 +1,11 @@
 def year_of_birth(name,age):
     year=2023-age
     print(f"hello {name} , you were born in {year}")
+    #default arguments
 def my_country(country="kenya"):
     print(f"hello you are from {country}")
     ##a function that takes in any numbeer of arguments
-    ##positional
+    ##positional-written using the asterik to connote possitional arguments
 def hello(*names):
   for name in names:{
       print(f"hello {name}")   
@@ -38,7 +39,16 @@ def concatenate_kwargs(**many_names):
       
 
    return first_values
+##
+def mydict(**thedict):
+    a={}
+    for each in thedict.values():
+       key ="somekey"
+    a.setdefault(key, [])
+    a[key].append([each])
+    
 
+    return ''.join (a)
       
       
 
