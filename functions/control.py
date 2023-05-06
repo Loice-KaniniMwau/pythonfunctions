@@ -54,14 +54,14 @@ def odd_or_even():
 
 # while loop
 def while_loop():
-    x=1
-    while x<10:
+    x=0
+    while x<=10:
         print("hello")
         x+=1 
 #break statement-stops the while loop even if the set condition is true
 def break_statement():
     x=1
-    while x < 10:
+    while x <= 10:
         print("hello")
         x+=1
         if x==5:
@@ -87,16 +87,23 @@ def even_numbers():
     print(a)
 #Write a function that takes an integer argument and prints "Prime" 
 # if the number is prime, and "Not prime" if the number is not prime.
-def prime_numbers(*prime):
-  for i in prime:
-      if i % 1 ==0 and i % i==0:
-          print(f" {i} is prime")
-      else:
-          print(f"{i} is Not prime ")
+def prime_numbers(nums):
+    # if nums < 1:
+    #     print ("num not prime number")
+    # else:
+    #     for n in range(2,nums):
+    #         if (nums % n)==0:
+    #             print("num not prime")
+    #             break
+    #         else
+
+    
+         
 
 #Write a function that takes a list of integers as input 
 #and prints the sum of all the even numbers in the list.
-def sumofeven_numbers(*mynumbers):
+
+ def sumofeven_numbers(*mynumbers):
     sum=0
     for i in mynumbers:
         if i %2 ==0:
@@ -110,6 +117,78 @@ def sumoftwo_numbers(a,b):
         if i % 3==0:
             sum+=i
     print(sum)
+
+# print all the numbers divisible by 3 using while loop and continue
+def divide_by3(a,b):
+    for i in range(a,b):
+        i+=1
+        if(i % 3 !=0):
+            print(i)
+            continue
+
+# using while
+def divide_3():
+    start=0
+    while(start <=10):
+        start+=1
+        if(start %3 !=0):
+            continue
+        print(start)
+#sum using a while loop
+def sum_of_nums():
+    sum=0
+    i=0
+    while(i <=10):
+        sum+=1
+        i=i+1
+    print(sum)
+def while_nums():
+    sum=0
+    m=0
+    while(m<=10):
+         sum+=m
+         m+=1
+    print(sum)
+def nums():
+    
+    starting_num=0
+    while(starting_num <=10):
+        print(starting_num)
+        starting_num+=1
+#prime numbers
+# def print_primes(numbers):
+#     for num in numbers:
+#         if num > 1:
+#             for i in range(2, num):
+#                 if num % i == 0:
+#                     break
+#             else:
+#                 print(num)
+def prime_numbers(numbers):
+    for num in numbers:
+        if num > 1:
+            for i in range(2,num):
+                if num % i ==0:
+                    break
+            else:
+                print(num)
+
+prime_numbers(numbers=[1,2,4,5,6,7,9,11,13])
+
+
+
+
+         
+       
+       
+
+  
+   
+
+
+
+    
+    
         
 
 
